@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Propos(){
+ function Propos(){
     return (
     
         <div>
@@ -10,3 +10,4 @@ export default function Propos(){
     )
 }
 
+export default Propos;
