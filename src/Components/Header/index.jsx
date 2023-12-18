@@ -1,12 +1,10 @@
 import { Link } from 'react-router-dom'
+import 'index.sass';
  
 function Header() {
     return (
-        <nav>
-            <Link to="/">Accueil</Link>
-            <Link to="/survey">Questionnaire</Link>
-        </nav>
+        <h1>HEADER</h1>
     )
 }
 
-export default Header
+export default Header;
