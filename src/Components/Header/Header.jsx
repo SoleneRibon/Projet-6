@@ -1,9 +1,12 @@
 import { Link } from 'react-router-dom'
-import 'index.sass';
+import React from 'react';
  
 function Header() {
     return (
-        <h1>HEADER</h1>
+        <header>
+            <h1>HEADER</h1>
+        </header>
+        
     )
 }
 
