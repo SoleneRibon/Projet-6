@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Home from './Pages/Home/Home';
-import Propos from './Pages/aPropos/Propos';
+import About from './Pages/About/About';
 import Logements from './Pages/ficheLogements/Logement';
 import Error from './Pages/errorPage/Error';
 import Layout from "./Components/Layout/Layout";
@@ -15,7 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="aPropos" element={<Propos />} />
+          <Route path="About" element={<About />} />
           <Route path="ficheLogement/:id" element={<Logements />} />
           <Route path='*' element={<Error />} />
         </Route>
