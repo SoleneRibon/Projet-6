@@ -1,19 +1,28 @@
 .header {
-    width: 100%;
-    margin-top: 40px;
+    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    max-width: 1440px;
+    margin-top: 40px;
+    padding: 0 50px;
+    box-sizing: border-box;
+    @media (max-width: 630px){
+        padding: 0 25px;
+      }
     &__figure {
         display: flex;
 		align-items: flex-start;
     }
     &__logo {
     @media (max-width: 630px){
-        
-        width: 130px;
-        
-    }
+         width: 130px;
+      }
     }
 }
+   
+   
+          
+   
