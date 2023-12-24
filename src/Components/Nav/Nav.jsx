@@ -7,7 +7,7 @@ function Nav () {
         <nav className='nav-bar'>
             
             <Link to="/" className='nav-bar__link-home'>
-                Acceuil
+                Accueil
             </Link>
             <Link to="About" className='nav-bar__link-about'>
                 A propos
