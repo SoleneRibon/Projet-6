@@ -1,0 +1,19 @@
+@import "../../Styles/variables.scss";
+
+.collapse {
+    background-color: $primary-color ;
+    border-radius: 0.600rem;
+    height: 50px;
+    width: 70%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    &__img {
+        height: 15px;
+        width: 24px;
+    }
+    &__img:hover {
+        cursor: pointer;
+    }
+}

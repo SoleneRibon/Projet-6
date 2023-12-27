@@ -1,20 +1,25 @@
-import { Link } from 'react-router-dom'
 import React from "react";
+import { NavLink, Link } from 'react-router-dom';
 import '../Nav/nav.scss';
 
 function Nav () {
     return(
         <nav className='nav-bar'>
             
-            <Link to="/" className='nav-bar__link-home'>
+            <NavLink to="/" className={({ isActive }) =>
+						isActive ? 'selected' : 'nav-bar__link-home'
+					}>
                 Accueil
-            </Link>
-            <Link to="About" className='nav-bar__link-about'>
+            </NavLink>
+            <NavLink to="About" className={({ isActive }) =>
+						isActive ? 'selected' : 'nav-bar__link-about'
+					}>
                 A propos
-            </Link>
+            </NavLink>
 
         </nav>
     )
 }
 
 export default Nav
+

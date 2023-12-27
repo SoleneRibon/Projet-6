@@ -9,7 +9,6 @@ import { Link } from 'react-router-dom';
 function Card() {
 
     const [data, setData] = useState([]);
-    const [slicedData, setSlicedData] = useState(data.slice(0, 6));
 
     useEffect(() => {
         setData(ListeLogements);
