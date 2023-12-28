@@ -1,19 +1,59 @@
 @import "../../Styles/variables.scss";
 
 .collapse {
-    background-color: $primary-color ;
-    border-radius: 0.600rem;
-    height: 50px;
     width: 70%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    @include breakpoint(small) {
+        width: 100%;
+      }
+
+    &__header {
+    align-items: center;
+    background-color: $primary-color;
+    border-radius: 5px;
+    display: inline-flex;
+    height: 25%;
+    min-height: 70px;
+    width: 100%;
     justify-content: space-between;
+    }
+    &__title {
+        font-size: 20px;
+        color: $secondary-color;
+        margin-left: 20px
+    }
     &__img {
-        height: 15px;
-        width: 24px;
+        display: flex;
+        justify-content: flex-end;
+        height: 30px;
+        width: 30px;
+        margin-right: 20px;
+        transition-duration: 0.8s;
+        
     }
     &__img:hover {
         cursor: pointer;
+        
     }
-}
+    &__img.true {
+        transform: rotate(-180deg);
+        
+    }
+    &__description {
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        color: $primary-color;
+        background-color:$thirdly_color;
+        height: 120px;
+        border-radius: 5px;
+        padding-left: 20px;
+        padding-right: 20px ;
+        
+        
+    }
+   
+    
+}    
+    

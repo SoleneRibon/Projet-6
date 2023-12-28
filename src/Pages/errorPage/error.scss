@@ -1,0 +1,41 @@
+@import "../../Styles/variables.scss";
+
+.error__break {
+    display: none;
+    @include breakpoint(small) {
+        display: block;
+      }
+}
+.error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+    color: $primary-color;
+    
+    &__title {
+        font-size: 150px;
+        font-weight: 800;
+        margin: auto;
+        @include breakpoint(small) {
+            font-size: 100px;
+          }
+    }
+    &__description {
+        font-size: 40px;
+        margin-bottom: 70px;
+        display: flex;
+        justify-content: center;
+        @include breakpoint(small) {
+            font-size: 20px;
+          }
+    }
+    &__link {
+        color: $primary-color;
+        font-size: 20px;
+    }
+    
+}
+    

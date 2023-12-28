@@ -10,7 +10,7 @@
         font-weight: 500;
         font-size: 20px;
 
-       @media (max-width: 630px){
+        @include breakpoint(small) {
         font-size: 16px;
       }
     }
