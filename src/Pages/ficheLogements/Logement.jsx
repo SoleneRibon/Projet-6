@@ -1,10 +1,14 @@
 import React from 'react';
+import Carrousel from '../../Components/Carrousel/Carrousel';
 
 function Logement(){
+    
+    
+    
     return (
         <>
-            <h1>Hello World !</h1>
-            <p>Je suis la page ficheLogement</p>
+            <Carrousel />
+            
         </>
     )
 }

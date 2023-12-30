@@ -1,0 +1,51 @@
+@import '../../Styles/variables.scss';
+
+.carrousel {
+    height: 400px;
+    max-width: 1440px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    @include breakpoint(small) {
+        padding: 0 20px;
+      }
+    
+    &__img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    &__fleche {
+        position: absolute;
+        width: 45px;
+        z-index: 1;
+    }
+    &__fleche:hover {
+        cursor: pointer;
+        filter: drop-shadow(4px 4px 6px black);
+    }
+    
+    &__dfleche {
+        margin-right: 80px;
+        right: 0;
+        top: 45%;
+        transform: rotate(90deg);
+        @include breakpoint(smaller) {
+            margin-right: 40px;
+          }
+        
+    }
+    &__gfleche {
+        margin-left: 80px;
+        left: 0;
+        top: 45%;
+        transform: rotate(-90deg);
+        @include breakpoint(smaller) {
+            margin-left: 40px;
+          }
+    }
+    
+}

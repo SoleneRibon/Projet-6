@@ -11,7 +11,10 @@ $thirdly_color: #f6f6f6;
 //mixins
 
 @mixin breakpoint($point) {
-    @if $point == small {
+    @if $point == smaller {
+      @media (max-width: 425px) { @content; }
+    }
+    @else if $point == small {
       @media (max-width: 768px) { @content; }
     }
     @else if $point == medium {
