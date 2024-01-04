@@ -13,9 +13,11 @@ function Collapse ({titre, description}) {
                 <div className="collapse__title">{titre}</div>
                 <img onClick={() => setVisible(!visible)} src={fleche} alt="Ouvrir cette liste" className= {`collapse__img ${visible}`}/>
             </div> 
+            <div className= {`collapse__box ${visible}`}> 
             {
-                visible && <div  className="collapse__description">{description}</div>
+                visible && <div  className={`collapse__description ${visible}`}>{description}</div>
             }
+            </div>
         </div>
     )
 }

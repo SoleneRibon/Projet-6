@@ -21,6 +21,8 @@
         margin: auto;
         @include breakpoint(small) {
             font-size: 100px;
+            margin-bottom: 80px;
+            margin-top: 0px;
           }
     }
     &__description {
@@ -30,11 +32,15 @@
         justify-content: center;
         @include breakpoint(small) {
             font-size: 20px;
+            margin-bottom: 50px;
           }
     }
     &__link {
         color: $primary-color;
         font-size: 20px;
+        @include breakpoint(small) {
+            margin-top: 70px;
+          }
     }
     
 }

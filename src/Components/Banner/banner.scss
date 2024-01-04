@@ -35,9 +35,13 @@
 	position: absolute;
     margin: 0;
     top: 40%;
-    left: 30%;
+    left: 35%;
     color: $secondary-color;
     font-size: 30px;
+    @include breakpoint(medium) {
+        font-size: 25px;
+        left: 30%;
+      }
     @include breakpoint(small) {
         font-size: 25px;
         left: 10%;

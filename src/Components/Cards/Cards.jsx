@@ -22,7 +22,7 @@ function Card() {
                     {data.map((logement) => (
                         
                         
-                        <Link to={"ficheLogement/:id"} className="card" key={logement.id}>
+                        <Link to={"ficheLogement/"+logement.id} className="card" key={logement.id}>
                             <img className="card__img" src={logement.cover} alt="" />
                             <div className="card__overlay">
                                 <h2 className='card__text'>{logement.title}</h2>
@@ -45,4 +45,3 @@ function Card() {
 
 export default Card;
 
-//"/logement/"+logement.id+"/#"
