@@ -1,44 +1,34 @@
 import React from 'react';
-import '../Cards/cards.scss';
-import { useState, useEffect } from 'react';
-import ListeLogements from '../../assets/logements.json';
 import { Link } from 'react-router-dom';
+import '../Cards/cards.scss';
 
 
 
-function Card() {
 
-    const [data, setData] = useState([]);
+function Card({ id, image, titre, link }) {
 
-    useEffect(() => {
-        setData(ListeLogements);
-       
-    }, [data]);
+
 
     return (
         <>
-            {data.length > 0 ? (
-                <>
-                    {data.map((logement) => (
-                        
-                        
-                        <Link to={"ficheLogement/"+logement.id} className="card" key={logement.id}>
-                            <img className="card__img" src={logement.cover} alt="" />
-                            <div className="card__overlay">
-                                <h2 className='card__text'>{logement.title}</h2>
-                            </div>
-                        </Link>
-                        
-                        
-                    ))}
-                </>
 
 
 
-            ) : (
-                <p>Une erreur est survenue lors de l'affichage des logements !</p>
-            )}
+            <Link to={link} className="card" key={id}>
+                <img className="card__img" src={image} alt="" />
+                <div className="card__overlay">
+                    <h2 className='card__text'>{titre}</h2>
+                </div>
+            </Link>
+
+
+
         </>
+
+
+
+
+
     )
 
 }
