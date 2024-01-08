@@ -40,8 +40,11 @@ function Carrousel({ images }) {
                         )
                     })
                 }
+                <p className='carrousel__counter'>{`${currentImage + 1} / ${nombreImg}`}</p>
                 {images.length > 1 && (
+
                     <img className="carrousel__fleche carrousel__dfleche" src={fleche} alt="" onClick={nextImage} />
+
                 )}
             </section>
 
