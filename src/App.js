@@ -17,6 +17,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="About" element={<About />} />
           <Route path="ficheLogement/:id" element={<Logements />} />
+          <Route path='/erreur' element={<Error />} />
           <Route path='*' element={<Error />} />
         </Route>
       </Routes>

@@ -1,0 +1,107 @@
+@import '../../Styles/variables.scss';
+
+.logement {
+    max-width: 1440px;
+    padding: 0 50px;
+    margin: auto;
+    @include breakpoint(small) {
+        padding: 0 20px;
+      }
+    &__fichelogement {
+        display: flex;
+        justify-content: space-between;
+        color: $primary-color;
+        margin-top: 30px;
+        font-size: 24px;
+        @include breakpoint(small) {
+            font-size: 18px;
+            flex-direction: column;
+          }
+
+    }
+    &__title {
+        margin-bottom: 10px;
+    }
+    &__location {
+        font-weight: 400;
+    }
+    &__tags {
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+        color: $secondary-color;
+        font-size: 18px;
+    }
+    
+    &__tag {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        background-color: $primary-color;
+        padding: 10px;
+        border-radius: 20px;
+        font-weight: 400;
+        min-width: 130px ;
+        display: flex;
+        justify-content: center;
+        @include breakpoint(small) {
+            padding: 8px;
+          }
+
+    }
+
+    &__hostInformation {
+        display: flex;
+        flex-direction: column;
+        @include breakpoint(small) {
+            flex-direction: row;
+            justify-content: space-between;
+          }
+    }
+    &__details {
+        display: flex;
+        flex-direction: row;
+        @include breakpoint(small) {
+            order: 2;
+          }
+    }
+
+    &__host {
+        padding-top: 30px;
+        padding-right: 20px;
+        font-weight: 400;
+    }
+    &__img {
+        width: 100px;
+        height: 100px;
+        border-radius: 70px;
+        object-fit: cover;
+    }
+    &__collapse {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+         width: 100%;
+         @include breakpoint(small) {
+            flex-direction: column;
+          }
+        
+    }
+    &__rating {
+        margin-top: 20px;
+        padding-left: 100px;
+        @include breakpoint(small) {
+            padding-left: 0;
+          }
+        
+
+    }
+
+    
+
+}
+
+
+
+
+

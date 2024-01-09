@@ -7,16 +7,23 @@ function Collapse ({titre, description}) {
 
     const [visible, setVisible] = useState(false);
 
+    const testClick = () => {
+        setVisible(!visible)
+    }
+
     return (
-        <div className="collapse">
+        <div className={`collapse ${visible ? "true" : "false"}`}>
             <div className="collapse__header">
                 <div className="collapse__title">{titre}</div>
-                <img onClick={() => setVisible(!visible)} src={fleche} alt="Ouvrir cette liste" className= {`collapse__img ${visible}`}/>
+                <img onClick={testClick} 
+                src={fleche} 
+                alt="Ouvrir cette liste" 
+                className= {`collapse__img ${visible ? "true" : ""}`}/>
             </div> 
-            <div className= {`collapse__box ${visible}`}> 
-            {
-                visible && <div  className={`collapse__description ${visible}`}>{description}</div>
-            }
+            
+            <div className= {`collapse__box ${visible ? "true" : "false"}`}> {description}
+            
+           
             </div>
         </div>
     )
