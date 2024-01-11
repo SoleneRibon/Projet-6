@@ -1,3 +1,4 @@
+@import '../../Styles/variables.scss';
 .footer {
     margin-top: 50px;
     background-color: black;
@@ -13,9 +14,15 @@
         color: white;
         margin-top: 20px;
         font-size: 24px;
-        @media (max-width: 630px){
+        @include breakpoint(smaller) {
             font-size: 16px;
           }
         
+    }
+    &__break {
+        display: none;
+        @include breakpoint(smaller) {
+            display: flex;
+          }
     }
 }

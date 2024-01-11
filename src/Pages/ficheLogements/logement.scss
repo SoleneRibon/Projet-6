@@ -47,6 +47,11 @@
         @include breakpoint(small) {
             padding: 8px;
           }
+          @include breakpoint(smaller) {
+            padding: 5px;
+            min-width: 80px ;
+            align-items: center;
+          }
 
     }
 
@@ -70,6 +75,9 @@
         padding-top: 30px;
         padding-right: 20px;
         font-weight: 400;
+        @include breakpoint(smaller) {
+            padding-right: 0;
+          }
     }
     &__img {
         width: 100px;

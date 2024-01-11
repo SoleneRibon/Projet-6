@@ -25,9 +25,9 @@
     height: 70%;
     background-color:$thirdly_color;
     border-radius: 0.600rem;
-    @media (max-width: 630px){
-        grid-template-columns: 1fr;
-      }
+    @include breakpoint(small) {
+      grid-template-columns: 1fr;
+    }
 }
 
    

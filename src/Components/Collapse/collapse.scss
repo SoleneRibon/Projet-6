@@ -60,6 +60,13 @@
         transition: height 1s ease;
         &.true {
             height: 120px;
+            @include breakpoint(smaller) {
+                height: 230px;
+            }
+            @include breakpoint(smallest) {
+                height: 275px;
+            }
+            
         }
 
         &.false {

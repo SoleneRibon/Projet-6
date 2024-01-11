@@ -10,8 +10,13 @@
         font-weight: 500;
         font-size: 20px;
 
-        @include breakpoint(small) {
+        @include breakpoint(smaller) {
         font-size: 16px;
+        padding-left: 10px;
+        @include breakpoint(smallest) {
+            font-size: 16px;
+            padding-left: 8px;
+          }
       }
     }
     &__link-home:hover {
@@ -25,8 +30,12 @@
     text-decoration: underline;
     color: $primary-color;
     padding-left: 30px;
-    font-weight: 500;
     font-size: 20px;
+    @include breakpoint(smaller) {
+        font-size: 16px;
+        padding-left: 10px;
+        
+      }
 }
         
        

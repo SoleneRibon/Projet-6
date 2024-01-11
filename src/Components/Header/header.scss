@@ -22,6 +22,9 @@
       @include breakpoint(small) {
          width: 130px;
       }
+      @include breakpoint(smallest) {
+        width: 100px;
+     }
     }
 }
    

@@ -2,7 +2,7 @@
 
 .mobile-break {
     display: none;
-    @include breakpoint(small) {
+    @include breakpoint(smaller) {
         display: flex;
       }
 }
@@ -39,12 +39,20 @@
     color: $secondary-color;
     font-size: 30px;
     @include breakpoint(medium) {
-        font-size: 25px;
-        left: 30%;
+        left: 25%;
       }
     @include breakpoint(small) {
+        top: 35%;
+        left: 20%;
+      }
+      @include breakpoint(smaller) {
+        top: 30%;
+        left: 5%;
+      }
+    @include breakpoint(smallest) {
         font-size: 25px;
-        left: 10%;
+        
       }
      }
+     
 }

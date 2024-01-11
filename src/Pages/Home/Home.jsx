@@ -20,7 +20,7 @@ function Home() {
 
     return (
         <section className='home'>
-            <Banner image={homeBanner} texte="Chez vous, partout et ailleurs" />
+            <Banner image={homeBanner} texte={<p>Chez vous, <br className="mobile-break"/>partout et ailleurs</p>}/>
             <div className="cards-container">
                 {data.length > 0 ? (
                     <>
