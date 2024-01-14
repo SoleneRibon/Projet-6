@@ -66,6 +66,10 @@
 
         &.true {
             height: 120px;
+            @include breakpoint(medium) {
+                height: 200px;
+                overflow: auto;
+            }
             
             @include breakpoint(smaller) {
                 height: 230px;

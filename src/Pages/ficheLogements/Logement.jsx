@@ -64,8 +64,8 @@ function Logement() {
                 </div>
             </div>
             <div className='logement__collapse'>
-                <Collapse jsp="collapseLogement" jsp2="collapseLogement__header" titre='Description' description={logement.description} />
-                <Collapse jsp="collapseLogement" jsp2="collapseLogement__header" titre='Equipements' description={<ul className='collapseLogement__ul'>{equipements}</ul>} />
+                <Collapse className1="collapseLogement" className2="collapseLogement__header" titre='Description' description={logement.description} />
+                <Collapse className1="collapseLogement" className2="collapseLogement__header" titre='Equipements' description={<ul className='collapseLogement__ul'>{equipements}</ul>} />
             </div>
         </section>
     );
