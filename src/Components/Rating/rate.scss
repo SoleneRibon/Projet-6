@@ -4,18 +4,17 @@
 .full-star,
 .empty-star {
     
-    width: 1.875rem;
-	height: 1.875rem;
+    width: 35px;
+	height: 35px;
     @include breakpoint(small) {
-        width: 45px;
-        height: 45px;
+       
     }
     @include breakpoint(smaller) {
-        width: 35px;
-        height: 35px;
+        width: 30px;
+        height: 30px;
     }
     @include breakpoint(smallest) {
-        width: 20%;
+        width: 23%;
         height: 30px;
     }
 }

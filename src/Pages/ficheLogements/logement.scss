@@ -115,8 +115,12 @@
         }
         @include breakpoint(smaller) {
             padding-top: 10px;
-            padding-left: 20px;
+            padding-left: 35px;
               
+        }
+        @media (max-width: 380px) {
+            padding-left: 25px;
+            
         }
         @include breakpoint(smallest) {
             padding-right: 0px;
@@ -133,8 +137,8 @@
         border-radius: 70px;
         object-fit: cover;
         @include breakpoint(smaller) {
-            width: 80px;
-            height: 80px;
+            width: 60px;
+            height: 60px;
         }
         @include breakpoint(smallest) {
             width: 50px;
