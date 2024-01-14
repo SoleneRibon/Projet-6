@@ -1,5 +1,7 @@
 @import "../../Styles/variables.scss";
 
+
+//design de la collapse globale et dans about.
 .collapse {
     width: 60%;
     margin-top: 20px;
@@ -56,17 +58,23 @@
         padding-left: 20px;
         padding-right: 20px;
         overflow: hidden;
+        
         height: 0px;
         transition: height 1s ease;
+        
+       
+
         &.true {
             height: 120px;
+            
             @include breakpoint(smaller) {
                 height: 230px;
             }
+
             @include breakpoint(smallest) {
                 height: 275px;
             }
-            
+
         }
 
         &.false {
@@ -78,4 +86,32 @@
 
     }
 
+}
+
+//design de la collapse dans logement
+
+.collapseLogement {
+    width: 40%;
+    @include breakpoint(small) {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    &__header {
+        align-items: center;
+        border-radius: 5px;
+        display: inline-flex;
+        height: 25%;
+        min-height: 70px;
+        width: 100%;
+        justify-content: space-between;
+        background-color: $primary-color;
+    }
+    &__list {
+        list-style: none;
+        font-weight: 400;
+        @include breakpoint(smaller) {
+            margin-top: 15px;
+        }
+    }
 }

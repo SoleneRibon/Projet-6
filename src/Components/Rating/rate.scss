@@ -1,0 +1,21 @@
+@import '../../Styles/variables.scss';
+
+
+.full-star,
+.empty-star {
+    
+    width: 1.875rem;
+	height: 1.875rem;
+    @include breakpoint(small) {
+        width: 45px;
+        height: 45px;
+    }
+    @include breakpoint(smaller) {
+        width: 35px;
+        height: 35px;
+    }
+    @include breakpoint(smallest) {
+        width: 20%;
+        height: 30px;
+    }
+}

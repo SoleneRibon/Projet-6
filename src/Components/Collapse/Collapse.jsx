@@ -3,7 +3,7 @@ import "../Collapse/collapse.scss";
 import fleche from "../../assets/fleche.png";
 
 
-function Collapse ({titre, description}) {
+function Collapse ({titre, description, jsp, jsp2}) {
 
     const [visible, setVisible] = useState(false);
 
@@ -12,8 +12,8 @@ function Collapse ({titre, description}) {
     }
 
     return (
-        <div className={`collapse ${visible ? "true" : "false"}`}>
-            <div className="collapse__header">
+        <div className={jsp} >
+            <div className={jsp2}>
                 <div className="collapse__title">{titre}</div>
                 <img onClick={testClick} 
                 src={fleche} 
@@ -21,7 +21,7 @@ function Collapse ({titre, description}) {
                 className= {`collapse__img ${visible ? "true" : ""}`}/>
             </div> 
             
-            <div className= {`collapse__box ${visible ? "true" : "false"}`}> {description}
+            <div className= {`collapse__box ${visible ? "true" : "false"}`}> {description} 
             
            
             </div>

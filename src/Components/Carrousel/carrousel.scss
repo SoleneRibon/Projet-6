@@ -6,6 +6,9 @@
     display: flex;
     flex-direction: row;
     position: relative;
+    @include breakpoint(smaller) {
+        height: 300px;
+      }
     
     &__img {
         height: 100%;

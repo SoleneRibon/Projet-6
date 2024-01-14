@@ -12,10 +12,10 @@ $thirdly_color: #f6f6f6;
 
 @mixin breakpoint($point) {
     @if $point == smallest {
-     @media (max-width: 320px) { @content; }
+     @media (max-width: 325px) { @content; }
    }
     @else if $point == smaller {
-      @media (max-width: 425px) { @content; }
+      @media (max-width: 440px) { @content; }
     }
     @else if $point == small {
       @media (max-width: 768px) { @content; }
